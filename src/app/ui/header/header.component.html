@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="language-switch">
+    <div class="language-btn active">EN</div>
+    <div class="language-btn">NL</div>
+  </div>
+  <div class="logo-container">
+    <a routerLink="/"> <img src="/images/logo.png" alt="logo" /></a>
+  </div>
+  @if(showFullNavigation){
+  <div class="routing-container">
+    <div class="routing-item"><a routerLink="/gallery">GALLERY</a></div>
+    <div class="routing-item"><a routerLink="about">ABOUT</a></div>
+  </div>
+  }@else { }
+</div>

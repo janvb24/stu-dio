@@ -1,0 +1,76 @@
+.container {
+  img {
+    width: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  //Showreel
+  .showreel-container {
+    position: relative;
+    background-color: #010714;
+
+    .background-img {
+      position: absolute;
+      top: 0;
+      left: -5%;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .content-container {
+      padding: 50px;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+
+      .showreel-item {
+        width: 50%;
+
+        h1 {
+          font-family: "E-muse", sans-serif;
+          font-family: "E-muse", sans-serif;
+          image-rendering: optimizeSpeed;
+          image-rendering: -moz-crisp-edges;
+          image-rendering: -webkit-optimize-contrast;
+          image-rendering: optimize-contrast;
+          margin-bottom: 45px;
+        }
+
+        p {
+          margin: 0px;
+          font-size: x-large;
+          font-family: arial;
+        }
+
+        .gallery-btn {
+          margin-top: 25px;
+          display: inline-block;
+
+          padding: 10px 20px;
+          background-color: #3f51b5;
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+        }
+      }
+
+      .video-container {
+        background-color: red;
+        height: 300px;
+      }
+
+      //   phone screens
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+
+        .showreel-item {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
