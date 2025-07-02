@@ -30,9 +30,9 @@ export class GalleryItemComponent {
       return;
     }
 
+    // Get Gallery Item and ensure it exists
     this.galleryItem$ = this.galleryService.getGalleryItemById(id).pipe(
       tap((item) => {
-        // If the item is undefined (not found), redirect to 404
         if (item === undefined) {
           this.router.navigate(['/404']);
         }
