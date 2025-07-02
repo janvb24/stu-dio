@@ -11,18 +11,18 @@ import { RouterLink } from '@angular/router';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent implements OnInit, OnDestroy {
-  showBackgroundImage: boolean = true;
+  showPhoneBanner: boolean = true;
 
   private destroy$ = new Subject<void>();
 
   constructor(private breakpointObserver: BreakpointObserver) {}
   ngOnInit(): void {
-    const CUSTOM_BREAKPOINT = '(max-width: 600px)';
+    const CUSTOM_BREAKPOINT = '(max-width: 1000px)';
     this.breakpointObserver
       .observe([CUSTOM_BREAKPOINT])
       .pipe(takeUntil(this.destroy$))
       .subscribe((result) => {
-        this.showBackgroundImage = !result.matches;
+        this.showPhoneBanner = !result.matches;
       });
   }
 

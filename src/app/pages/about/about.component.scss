@@ -1,0 +1,123 @@
+h1 {
+  font-family: "E-muse", sans-serif;
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimize-contrast;
+}
+
+.main {
+  position: relative;
+  //   overflow: hidden;
+
+  .background-img {
+    position: absolute;
+    height: calc(100vh - 240px);
+    top: -50px;
+    left: 15%;
+    z-index: -1;
+    filter: brightness(80%);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-image: url("/images/statue2.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 20%) calc(50%);
+  background-size: 40%;
+
+  @media screen and (max-width: 1700px) {
+    background-position: calc(50% - 20%) calc(50% - 64px);
+  }
+
+  @media screen and (max-width: 1450px) {
+    background-position: calc(50% - 20%) calc(50% - 96px);
+  }
+
+  @media screen and (max-width: 1250px) {
+    background-position: calc(50% - 20%) calc(50% - 128px);
+  }
+
+  @media screen and (max-width: 1000px) {
+    background-position: calc(50% - 20%) top;
+  }
+
+  @media screen and (max-width: 1000px) {
+    background-image: none;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  p {
+    margin: 0px;
+  }
+
+  .content-container {
+    background-color: rgb(2, 2, 32);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 32px;
+    margin-bottom: 32px;
+
+    //   phone screens
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+
+      .content {
+        width: 100%;
+
+        h1 {
+          padding-top: 16px;
+        }
+      }
+
+      img {
+        margin: 16px 00px !important;
+      }
+    }
+
+    .content {
+      //100 % - img width - some extra space
+      width: calc(100% - 300px - 32px);
+
+      @media screen and (max-width: 800px) {
+        width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        margin-bottom: 8px;
+      }
+    }
+
+    img {
+      width: 300px;
+    }
+  }
+
+  .work-container {
+    margin-bottom: 0px;
+
+    img {
+      margin-left: 0px;
+    }
+
+    // Put img on bottom for smaller screens instead of on top
+    @media screen and (max-width: 800px) {
+      img {
+        order: 2;
+      }
+
+      .content {
+        order: 1;
+      }
+    }
+  }
+}

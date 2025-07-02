@@ -1,12 +1,14 @@
 <div class="container">
   <!-- banner -->
-  <img src="/images/banner.png" alt="banner" />
+  <img
+    src="{{
+      showPhoneBanner ? '/images/banner.png' : '/images/banner-telefoon.png'
+    }}"
+    alt="banner"
+  />
 
   <!-- showreel -->
   <div class="showreel-container">
-    @if(showBackgroundImage){
-    <img class="background-img" src="/images/statue1.png" alt="statue" />
-    }
     <div class="content-container">
       <div class="showreel-item">
         <h1>SHOWREEL</h1>

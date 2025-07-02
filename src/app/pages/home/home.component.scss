@@ -26,18 +26,25 @@
       display: flex;
       flex-direction: row;
       gap: 50px;
+      background-image: url("/images/statue1.png");
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: 80%;
 
       .showreel-item {
         width: 50%;
 
         h1 {
           font-family: "E-muse", sans-serif;
-          font-family: "E-muse", sans-serif;
           image-rendering: optimizeSpeed;
           image-rendering: -moz-crisp-edges;
           image-rendering: -webkit-optimize-contrast;
           image-rendering: optimize-contrast;
           margin-bottom: 45px;
+
+          @media screen and (max-width: 600px) {
+            font-size: xx-large;
+          }
         }
 
         p {
@@ -63,12 +70,43 @@
         height: 300px;
       }
 
-      //   phone screens
-      @media screen and (max-width: 600px) {
-        flex-direction: column;
+      @media screen and (max-width: 1550px) {
+        background-size: 100%;
+      }
 
+      @media screen and (max-width: 1320px) {
+        background-size: 120%;
+        background-position: top right;
+      }
+
+      @media screen and (max-width: 1120px) {
+        background-size: 130%;
+        background-position: center left;
+      }
+
+      @media screen and (max-width: 600px) {
+        background-size: 150%;
+        background-position: center left;
+      }
+
+      @media screen and (max-width: 400px) {
+        background-image: none;
+      }
+
+      @media screen and (max-width: 1200px) {
+        flex-direction: column;
+        padding: 20px;
         .showreel-item {
           width: 100%;
+          text-align: center;
+        }
+        .gallery-btn {
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .video-container {
+          width: 100%;
+          height: 200px;
         }
       }
     }
