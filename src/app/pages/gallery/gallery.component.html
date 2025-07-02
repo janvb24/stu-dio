@@ -1,0 +1,14 @@
+<div class="main">
+  <h1>GALLERY</h1>
+  <div class="container">
+    @for (item of ls; track item) {
+    <div routerLink="{{ item.id }}" class="item">
+      <!-- Your content here, e.g.: -->
+      <div class="image-holder">
+        <img src="{{ item.url }}" alt="{{ item.altText }}" />
+      </div>
+      <h5>{{ item.year }}</h5>
+    </div>
+    }
+  </div>
+</div>

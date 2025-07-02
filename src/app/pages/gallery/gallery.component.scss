@@ -1,0 +1,50 @@
+h1,
+h5 {
+  font-family: "E-muse", sans-serif;
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimize-contrast;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+
+  .item {
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex; /* Make the item itself a flex container */
+    flex-direction: column; /* Stack its children vertically */
+    /* Remove width: 320px; here if you want items to grow/shrink based on content,
+     or keep it if you want fixed column widths */
+    width: 320px; /* Keep this if you want consistent column widths */
+
+    .image-holder {
+      width: 100%;
+      //   height: 512px;
+      background-color: white;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin-top: auto;
+
+      img {
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+        display: block;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+      z-index: 1;
+      position: relative;
+    }
+  }
+}
