@@ -1,14 +1,17 @@
 <div class="main">
   <h1>GALLERY</h1>
+  @if(gallery$ | async; as gallery){
+
   <div class="container">
-    @for (item of ls; track item) {
+    <!-- Add all items if they have at least 1 url -->
+    @for (item of gallery.Items; track item) { @if(item.urls.length > 0){
     <div routerLink="{{ item.id }}" class="item">
-      <!-- Your content here, e.g.: -->
       <div class="image-holder">
-        <img src="{{ item.url }}" alt="{{ item.altText }}" />
+        <img src="{{ item.urls[0].url }}" alt="{{ item.urls[0].altText }}" />
       </div>
       <h5>{{ item.year }}</h5>
     </div>
-    }
+    } }
   </div>
+  }
 </div>

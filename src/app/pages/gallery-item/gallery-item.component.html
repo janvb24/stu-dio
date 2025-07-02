@@ -1,0 +1,19 @@
+<div class="container">
+  @if(galleryItem$ | async; as item) {
+  <h1>{{ item.name }}</h1>
+  <h5>{{ item.year }}</h5>
+  <p>{{ item.description }}</p>
+  <div class="imgs-container">
+    @for (x of item.urls; track x.url) {
+    <div class="img-wrapper">
+      <img src="{{ x.url }}" alt="{{ x.altText }}" />
+    </div>
+    }
+
+    <!-- if no images -->
+    @if(item.urls.length == 0){
+    <h5 class="no-imgs">NO IMAGES TO SHOW</h5>
+    }
+  </div>
+  }
+</div>

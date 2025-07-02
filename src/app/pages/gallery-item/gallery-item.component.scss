@@ -1,0 +1,41 @@
+h1,
+h5 {
+  font-family: "E-muse", sans-serif;
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimize-contrast;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  text-align: center;
+}
+
+.no-imgs {
+  text-decoration: underline;
+}
+
+.imgs-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    max-width: 80vw;
+    max-height: 80vh;
+    height: auto;
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "Owner": "Ryan",
+  "KVK": "92083072",
+  "Items": [
+    {
+      "id": 0,
+      "name": "Louers Factory",
+      "description": "",
+      "year": 2025,
+      "urls": [
+        { "url": "/images/projects/louers-factory2025/2.jpg", "altText": "" },
+        { "url": "/images/projects/louers-factory2025/3.jpg", "altText": "" },
+        { "url": "/images/projects/louers-factory2025/4.png", "altText": "" }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Louers",
+      "description": "",
+      "year": 2025,
+      "urls": [
+        { "url": "/images/projects/louers2025/1.png", "altText": "" },
+        { "url": "/images/projects/louers2025/2.png", "altText": "" },
+        { "url": "/images/projects/louers2025/3.png", "altText": "" },
+        { "url": "/images/projects/louers2025/4.png", "altText": "" },
+        { "url": "/images/projects/louers2025/5.png", "altText": "" },
+        { "url": "/images/projects/louers2025/objecten.png", "altText": "" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Maya temple",
+      "description": "",
+      "year": 2025,
+      "urls": [
+        {
+          "url": "/images/projects/maya-tempel2025/maya-tempel.png",
+          "altText": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "LP cover",
+      "description": "",
+      "year": 2024,
+      "urls": [
+        { "url": "/images/projects/LP-cover2024/lp-cover.png", "altText": "" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Wii",
+      "description": "",
+      "year": 2024,
+      "urls": [
+        { "url": "/images/projects/wii2024/wii.png", "altText": "" },
+        { "url": "/images/projects/wii2024/wii-clean.png", "altText": "" },
+        { "url": "/images/projects/wii2024/wii-texture.png", "altText": "" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Factory",
+      "description": "",
+      "year": 2024,
+      "urls": [
+        { "url": "/images/projects/factory2024/factory.png", "altText": "" }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Zelda",
+      "description": "",
+      "year": 2024,
+      "urls": [
+        { "url": "/images/projects/zelda2024/zelda.png", "altText": "" },
+        {
+          "url": "/images/projects/zelda2024/zeldaStillFrame1.png",
+          "altText": ""
+        },
+        {
+          "url": "/images/projects/zelda2024/zeldaStillFrame2.png",
+          "altText": ""
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Statue",
+      "description": "",
+      "year": 2024,
+      "urls": [
+        { "url": "/images/projects/statue2024/statue.png", "altText": "" }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Tv",
+      "description": "",
+      "year": 2023,
+      "urls": [{ "url": "/images/projects/tv2023/tv.jpg", "altText": "" }]
+    },
+    {
+      "id": 9,
+      "name": "Hoodie",
+      "description": "",
+      "year": 2023,
+      "urls": [
+        { "url": "/images/projects/hoodie2023/front.jpg", "altText": "" },
+        { "url": "/images/projects/hoodie2023/back.jpg", "altText": "" }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Robot arm",
+      "description": "",
+      "year": 2023,
+      "urls": [
+        { "url": "/images/projects/robot-arm2023/clean.png", "altText": "" },
+        { "url": "/images/projects/robot-arm2023/textures.png", "altText": "" },
+        { "url": "/images/projects/robot-arm2023/wireframe.png", "altText": "" }
+      ]
+    }
+  ]
+}
