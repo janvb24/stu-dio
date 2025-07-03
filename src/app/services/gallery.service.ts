@@ -8,7 +8,7 @@ import { Gallery, GalleryItem } from '../models/gallery.model';
   providedIn: 'root',
 })
 export class GalleryService {
-  private jsonUrl = 'gallery.json';
+  private jsonUrl = 'assets/gallery.json';
 
   constructor(private http: HttpClient) {}
 

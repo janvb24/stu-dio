@@ -1,23 +1,35 @@
 import { BreakpointObserver } from '@angular/cdk/layout';
+import { CommonModule } from '@angular/common';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { RouterLink } from '@angular/router';
+import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
 import { Subject, takeUntil } from 'rxjs';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MatIconModule, RouterLink, MatSidenavModule],
+  imports: [
+    MatIconModule,
+    RouterLink,
+    MatSidenavModule,
+    TranslocoModule,
+    CommonModule,
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent implements OnInit, OnDestroy {
   showFullNavigation: boolean = true;
+  currentLanguage: string = '';
 
   private destroy$ = new Subject<void>();
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(
+    private breakpointObserver: BreakpointObserver,
+    private transloco: TranslocoService
+  ) {}
   ngOnInit(): void {
     const CUSTOM_BREAKPOINT = '(max-width: 750px)';
     this.breakpointObserver
@@ -26,10 +38,21 @@ export class HeaderComponent implements OnInit, OnDestroy {
       .subscribe((result) => {
         this.showFullNavigation = !result.matches;
       });
+
+    // Subscribe to language change
+    this.transloco.langChanges$.subscribe({
+      next: (value) => {
+        this.currentLanguage = value;
+      },
+    });
   }
 
   ngOnDestroy(): void {
     this.destroy$.next();
     this.destroy$.complete();
+  }
+
+  setLanguage(language: 'en' | 'nl') {
+    this.transloco.setActiveLang(language);
   }
 }

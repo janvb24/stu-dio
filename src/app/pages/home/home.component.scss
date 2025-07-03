@@ -68,6 +68,10 @@
       .video-container {
         background-color: red;
         height: 300px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       @media screen and (max-width: 1550px) {

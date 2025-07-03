@@ -6,10 +6,15 @@ export interface Gallery {
 
 export interface GalleryItem {
   id: number;
-  name: string;
-  description: string;
+  name: languageOptions;
+  description: languageOptions;
   year: number;
   urls: GalleryUrl[];
+}
+
+export interface languageOptions {
+  en: string;
+  nl: string;
 }
 
 export interface GalleryUrl {

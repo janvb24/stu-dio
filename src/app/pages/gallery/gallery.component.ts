@@ -4,11 +4,12 @@ import { GalleryService } from '../../services/gallery.service';
 import { Gallery } from '../../models/gallery.model';
 import { Observable } from 'rxjs';
 import { CommonModule } from '@angular/common';
+import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-gallery',
   standalone: true,
-  imports: [RouterLink, CommonModule],
+  imports: [RouterLink, CommonModule, TranslocoModule],
   templateUrl: './gallery.component.html',
   styleUrl: './gallery.component.scss',
 })

@@ -4,8 +4,14 @@
   "Items": [
     {
       "id": 0,
-      "name": "Louers Factory",
-      "description": "",
+      "name": {
+        "en": "Louers Factory",
+        "nl": "Louers Fabriek"
+      },
+      "description": {
+        "en": "",
+        "nl": ""
+      },
       "year": 2025,
       "urls": [
         { "url": "/images/projects/louers-factory2025/2.jpg", "altText": "" },
@@ -15,8 +21,14 @@
     },
     {
       "id": 1,
-      "name": "Louers",
-      "description": "",
+      "name": {
+        "en": "Louers",
+        "nl": "Louers"
+      },
+      "description": {
+        "en": "",
+        "nl": ""
+      },
       "year": 2025,
       "urls": [
         { "url": "/images/projects/louers2025/1.png", "altText": "" },
@@ -29,8 +41,14 @@
     },
     {
       "id": 2,
-      "name": "Maya temple",
-      "description": "",
+      "name": {
+        "en": "Maya temple",
+        "nl": "Maya tempel"
+      },
+      "description": {
+        "en": "",
+        "nl": ""
+      },
       "year": 2025,
       "urls": [
         {
@@ -41,8 +59,14 @@
     },
     {
       "id": 3,
-      "name": "LP cover",
-      "description": "",
+      "name": {
+        "en": "LP cover",
+        "nl": "LP cover"
+      },
+      "description": {
+        "en": "",
+        "nl": ""
+      },
       "year": 2024,
       "urls": [
         { "url": "/images/projects/LP-cover2024/lp-cover.png", "altText": "" }
@@ -50,8 +74,14 @@
     },
     {
       "id": 4,
-      "name": "Wii",
-      "description": "",
+      "name": {
+        "en": "Wii",
+        "nl": "Wii"
+      },
+      "description": {
+        "en": "",
+        "nl": ""
+      },
       "year": 2024,
       "urls": [
         { "url": "/images/projects/wii2024/wii.png", "altText": "" },
@@ -61,8 +91,14 @@
     },
     {
       "id": 5,
-      "name": "Factory",
-      "description": "",
+      "name": {
+        "en": "Factory",
+        "nl": "Fabriek"
+      },
+      "description": {
+        "en": "",
+        "nl": ""
+      },
       "year": 2024,
       "urls": [
         { "url": "/images/projects/factory2024/factory.png", "altText": "" }
@@ -70,8 +106,14 @@
     },
     {
       "id": 6,
-      "name": "Zelda",
-      "description": "",
+      "name": {
+        "en": "Zelda",
+        "nl": "Zelda"
+      },
+      "description": {
+        "en": "",
+        "nl": ""
+      },
       "year": 2024,
       "urls": [
         { "url": "/images/projects/zelda2024/zelda.png", "altText": "" },
@@ -87,8 +129,14 @@
     },
     {
       "id": 7,
-      "name": "Statue",
-      "description": "",
+      "name": {
+        "en": "Statue",
+        "nl": "Standbeeld"
+      },
+      "description": {
+        "en": "",
+        "nl": ""
+      },
       "year": 2024,
       "urls": [
         { "url": "/images/projects/statue2024/statue.png", "altText": "" }
@@ -96,15 +144,27 @@
     },
     {
       "id": 8,
-      "name": "Tv",
-      "description": "",
+      "name": {
+        "en": "Tv",
+        "nl": "Tv"
+      },
+      "description": {
+        "en": "",
+        "nl": ""
+      },
       "year": 2023,
       "urls": [{ "url": "/images/projects/tv2023/tv.jpg", "altText": "" }]
     },
     {
       "id": 9,
-      "name": "Hoodie",
-      "description": "",
+      "name": {
+        "en": "Hoodie",
+        "nl": "Hoodie"
+      },
+      "description": {
+        "en": "",
+        "nl": ""
+      },
       "year": 2023,
       "urls": [
         { "url": "/images/projects/hoodie2023/front.jpg", "altText": "" },
@@ -113,8 +173,14 @@
     },
     {
       "id": 10,
-      "name": "Robot arm",
-      "description": "",
+      "name": {
+        "en": "Robot arm",
+        "nl": "Robotarm"
+      },
+      "description": {
+        "en": "",
+        "nl": ""
+      },
       "year": 2023,
       "urls": [
         { "url": "/images/projects/robot-arm2023/clean.png", "altText": "" },

@@ -1,8 +1,8 @@
 <div class="container">
   @if(galleryItem$ | async; as item) {
-  <h1>{{ item.name }}</h1>
+  <h1>{{ item.name[currentLanguage] }}</h1>
   <h5>{{ item.year }}</h5>
-  <p>{{ item.description }}</p>
+  <p>{{ item.description[currentLanguage] }}</p>
   <div class="imgs-container">
     @for (x of item.urls; track x.url) {
     <div class="img-wrapper">

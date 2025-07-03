@@ -4,21 +4,24 @@ import { Observable, tap } from 'rxjs';
 import { GalleryService } from '../../services/gallery.service';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
+import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-gallery-item',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslocoModule],
   templateUrl: './gallery-item.component.html',
   styleUrl: './gallery-item.component.scss',
 })
 export class GalleryItemComponent {
   galleryItem$: Observable<GalleryItem | undefined> | undefined;
+  currentLanguage: 'en' | 'nl' = 'en';
 
   constructor(
     private galleryService: GalleryService,
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private transloco: TranslocoService
   ) {}
 
   ngOnInit(): void {
@@ -38,5 +41,18 @@ export class GalleryItemComponent {
         }
       })
     );
+
+    // Subscribe to language change
+    this.transloco.langChanges$.subscribe({
+      next: (value) => {
+        this.updateLanguage(value);
+      },
+    });
+  }
+
+  private updateLanguage(lang: string) {
+    if (lang === 'en' || lang === 'nl') {
+      this.currentLanguage = lang;
+    }
   }
 }

@@ -1,0 +1,42 @@
+{
+  "CommonTitles": {
+    "Gallery": "GALLERY",
+    "About": "ABOUT"
+  },
+  "Footer": {
+    "Text": "Follow me on social media",
+    "About": "About me"
+  },
+  "HomePage": {
+    "Showreel": {
+      "Title": "SHOWREEL",
+      "Text1": "A short showreel to show what I can do and who I am.",
+      "Text2": "It's not a lot of work yet but it does give an idea of where my strenghts currently lie.",
+      "Text3": "In the comming period, I will continue to expand my gallery."
+    }
+  },
+  "AboutPage": {
+    "Hello": {
+      "Title": "HELLO",
+      "SubTitle": "My name is Ryan",
+      "Text1": "I am a 20 year old 3D digital designer from the Netherlands.",
+      "Text2": "This year, I graduated from the Digital Design & Motion program at SintLucas in Eindhoven.",
+      "Text3": "I am a hard worker and a true perfectionist when it comes to 3D work, because I always strive for the best result.",
+      "Text4": "Not just for myself, but of course also for the client."
+    },
+    "Work": {
+      "Title": "WORK",
+      "Text1": "I don't work in a team and do most of the work myself.",
+      "Text2": "The programs I use are Blender and Substance Painter for the 3D part.",
+      "Text3": "I also use Adobe Premiere Pro, Photoshop, After Effects and many more for my projects.",
+      "Text4": "I am open to working in many different styles, but focus most on realism.",
+      "Text5": "In my projects no AI is used, everything is really homemade!"
+    }
+  },
+  "NotFoundPage": {
+    "Text": "Page does not exist"
+  },
+  "Buttons": {
+    "Gallery": "Gallery"
+  }
+}

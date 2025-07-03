@@ -11,16 +11,19 @@
   <div class="showreel-container">
     <div class="content-container">
       <div class="showreel-item">
-        <h1>SHOWREEL</h1>
-        <p>A short showreel to show what I can do and who I am.</p>
-        <p>
-          It's not a lot of work yet but it does give an idea of where my
-          strenghts currently lie.
-        </p>
-        <p>In the comming period, I will continue to expand my gallery.</p>
-        <a routerLink="/gallery" class="gallery-btn">Gallery</a>
+        <ng-container *transloco="let t">
+          <h1>{{ t("HomePage.Showreel.Title") }}</h1>
+          <p>{{ t("HomePage.Showreel.Text1") }}</p>
+          <p>
+            {{ t("HomePage.Showreel.Text2") }}
+          </p>
+          <p>{{ t("HomePage.Showreel.Text3") }}</p>
+          <a routerLink="/gallery" class="gallery-btn">{{
+            t("Buttons.Gallery")
+          }}</a>
+        </ng-container>
       </div>
-      <div class="showreel-item video-container">video</div>
+      <div class="showreel-item video-container">COMMING SOON</div>
     </div>
   </div>
 </div>
