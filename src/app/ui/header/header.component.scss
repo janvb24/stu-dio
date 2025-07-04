@@ -4,6 +4,9 @@
   padding: 12px 35px 8px 15px;
   height: 60px;
   font-family: sans-serif;
+  z-index: 2;
+  justify-content: space-between;
+  align-items: center;
 
   div {
     width: 33%;
@@ -13,7 +16,6 @@
   .language-switch {
     display: inline-flex;
     align-items: center;
-    height: 100%;
 
     .language-btn {
       display: inline;
@@ -35,8 +37,11 @@
 
   //Logo
   .logo-container {
+    flex-grow: 1;
+    text-align: center;
     img {
-      width: 100%;
+      width: auto;
+      max-width: 150px;
       height: 100%;
       object-fit: contain;
     }
@@ -45,7 +50,7 @@
   //Routing
   .routing-container {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     flex-direction: row;
     align-items: center;
     font-family: "E-muse", sans-serif;

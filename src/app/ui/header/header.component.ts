@@ -1,11 +1,11 @@
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { CommonModule } from '@angular/common';
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { RouterLink } from '@angular/router';
 import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
-import { Subject, takeUntil } from 'rxjs';
+import { filter, map, Subject, Subscription, takeUntil } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -23,6 +23,8 @@ import { Subject, takeUntil } from 'rxjs';
 export class HeaderComponent implements OnInit, OnDestroy {
   showFullNavigation: boolean = true;
   currentLanguage: string = '';
+  @Input() showHeader: boolean = true;
+  @Input() backgroundColor: string | null = null;
 
   private destroy$ = new Subject<void>();
 

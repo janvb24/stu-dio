@@ -1,14 +1,24 @@
+@import "../../styles/variables";
 .container {
+  position: relative;
   img {
     width: 100%;
     object-fit: contain;
     display: block;
+    z-index: 1;
+  }
+
+  app-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: fit-content;
   }
 
   //Showreel
   .showreel-container {
     position: relative;
-    background-color: #010714;
+    background-color: $background-blue;
 
     .background-img {
       position: absolute;

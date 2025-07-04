@@ -3,11 +3,12 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Subject, takeUntil } from 'rxjs';
 import { RouterLink } from '@angular/router';
 import { TranslocoModule } from '@ngneat/transloco';
+import { HeaderComponent } from '../../ui/header/header.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink, TranslocoModule],
+  imports: [RouterLink, TranslocoModule, HeaderComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

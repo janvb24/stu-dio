@@ -3,7 +3,24 @@
   "KVK": "92083072",
   "Items": [
     {
-      "id": 0,
+      "id": 11,
+      "name": {
+        "en": "Guitar",
+        "nl": "gitaar"
+      },
+      "description": {
+        "en": "",
+        "nl": ""
+      },
+      "year": 2025,
+      "urls": [
+        { "url": "/images/projects/guitar2025/ps11.png", "altText": "" },
+        { "url": "/images/projects/guitar2025/ps22.png", "altText": "" },
+        { "url": "/images/projects/guitar2025/ps33.png", "altText": "" }
+      ]
+    },
+    {
+      "id": 10,
       "name": {
         "en": "Louers Factory",
         "nl": "Louers Fabriek"
@@ -20,7 +37,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 9,
       "name": {
         "en": "Louers",
         "nl": "Louers"
@@ -40,7 +57,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 8,
       "name": {
         "en": "Maya temple",
         "nl": "Maya tempel"
@@ -58,7 +75,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 7,
       "name": {
         "en": "LP cover",
         "nl": "LP cover"
@@ -73,7 +90,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 6,
       "name": {
         "en": "Wii",
         "nl": "Wii"
@@ -105,7 +122,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 4,
       "name": {
         "en": "Zelda",
         "nl": "Zelda"
@@ -128,7 +145,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 3,
       "name": {
         "en": "Statue",
         "nl": "Standbeeld"
@@ -143,7 +160,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 2,
       "name": {
         "en": "Tv",
         "nl": "Tv"
@@ -153,10 +170,10 @@
         "nl": ""
       },
       "year": 2023,
-      "urls": [{ "url": "/images/projects/tv2023/tv.jpg", "altText": "" }]
+      "urls": [{ "url": "/images/projects/tv2023/tv.png", "altText": "" }]
     },
     {
-      "id": 9,
+      "id": 1,
       "name": {
         "en": "Hoodie",
         "nl": "Hoodie"
@@ -167,12 +184,12 @@
       },
       "year": 2023,
       "urls": [
-        { "url": "/images/projects/hoodie2023/front.jpg", "altText": "" },
+        { "url": "/images/projects/hoodie2023/front.png", "altText": "" },
         { "url": "/images/projects/hoodie2023/back.jpg", "altText": "" }
       ]
     },
     {
-      "id": 10,
+      "id": 0,
       "name": {
         "en": "Robot arm",
         "nl": "Robotarm"
@@ -183,8 +200,8 @@
       },
       "year": 2023,
       "urls": [
-        { "url": "/images/projects/robot-arm2023/clean.png", "altText": "" },
         { "url": "/images/projects/robot-arm2023/textures.png", "altText": "" },
+        { "url": "/images/projects/robot-arm2023/clean.png", "altText": "" },
         { "url": "/images/projects/robot-arm2023/wireframe.png", "altText": "" }
       ]
     }

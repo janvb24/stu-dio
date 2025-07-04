@@ -1,4 +1,10 @@
-<div class="container">
+@if (showHeader){
+<div
+  class="container"
+  [ngStyle]="{
+    'background-color': backgroundColor != null ? backgroundColor : null
+  }"
+>
   <div class="language-switch">
     <div
       class="language-btn"
@@ -18,8 +24,8 @@
   <div class="logo-container">
     <a routerLink="/"> <img src="/images/logo.png" alt="logo" /></a>
   </div>
-  @if(showFullNavigation){
   <div class="routing-container">
+    @if(showFullNavigation){
     <ng-container *transloco="let t">
       <div class="routing-item">
         <a routerLink="/gallery">{{ t("CommonTitles.Gallery") }}</a>
@@ -28,6 +34,7 @@
         <a routerLink="about">{{ t("CommonTitles.About") }}</a>
       </div>
     </ng-container>
+    }
   </div>
-  }
 </div>
+}

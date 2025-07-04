@@ -1,3 +1,6 @@
-<app-header></app-header>
+<app-header
+  [showHeader]="currentPath != '/'"
+  [backgroundColor]="'#010714'"
+></app-header>
 <router-outlet />
 <app-footer></app-footer>
