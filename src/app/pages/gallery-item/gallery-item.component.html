@@ -3,16 +3,33 @@
   <h1>{{ item.name[currentLanguage] }}</h1>
   <h5>{{ item.year }}</h5>
   <p>{{ item.description[currentLanguage] }}</p>
-  <div class="imgs-container">
+  <div class="content-container">
     @for (x of item.urls; track x.url) {
-    <div class="img-wrapper">
+    <div class="content-wrapper">
       <img src="{{ x.url }}" alt="{{ x.altText }}" />
     </div>
     }
-
     <!-- if no images -->
     @if(item.urls.length == 0){
     <h5 class="no-imgs">NO IMAGES TO SHOW</h5>
+    }
+  </div>
+
+  <div class="content-container">
+    @for (x of item.videos; track x.id){
+    <div class="content-wrapper">
+      <iframe
+        width="320"
+        height="533"
+        [src]="x.sanitizedUrl"
+        [title]="x.title"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+gyroscope; picture-in-picture;
+web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
     }
   </div>
   }

@@ -7,6 +7,9 @@ h5 {
   image-rendering: -webkit-optimize-contrast;
   image-rendering: optimize-contrast;
   text-align: center;
+  background-color: $background-blue;
+  padding-bottom: 26px;
+  margin: 0;
 }
 
 .container {
@@ -19,11 +22,9 @@ h5 {
 
   .item {
     transition: transform 0.2s, box-shadow 0.2s;
-    display: flex; /* Make the item itself a flex container */
-    flex-direction: column; /* Stack its children vertically */
-    /* Remove width: 320px; here if you want items to grow/shrink based on content,
-     or keep it if you want fixed column widths */
-    width: 320px; /* Keep this if you want consistent column widths */
+    display: flex;
+    flex-direction: column;
+    width: 320px;
 
     .image-holder {
       width: 100%;

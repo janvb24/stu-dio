@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { GalleryItem } from '../../models/gallery.model';
-import { Observable, tap } from 'rxjs';
+import { map, Observable, tap } from 'rxjs';
 import { GalleryService } from '../../services/gallery.service';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
 import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-gallery-item',
@@ -21,6 +22,7 @@ export class GalleryItemComponent {
     private galleryService: GalleryService,
     private route: ActivatedRoute,
     private router: Router,
+    private sanitizer: DomSanitizer,
     private transloco: TranslocoService
   ) {}
 
@@ -39,6 +41,16 @@ export class GalleryItemComponent {
         if (item === undefined) {
           this.router.navigate(['/404']);
         }
+      }),
+      map((item) => {
+        if (item) {
+          // Sanitize video URLs
+          item.videos = item.videos.map((video) => ({
+            ...video,
+            sanitizedUrl: this.getSafeVideoUrl(video.id),
+          }));
+        }
+        return item;
       })
     );
 
@@ -54,5 +66,11 @@ export class GalleryItemComponent {
     if (lang === 'en' || lang === 'nl') {
       this.currentLanguage = lang;
     }
+  }
+
+  private getSafeVideoUrl(videoId: string): SafeResourceUrl {
+    // Correct YouTube embed URL format
+    const url = `https://www.youtube.com/embed/${videoId}`;
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 }

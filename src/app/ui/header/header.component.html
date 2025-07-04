@@ -1,40 +1,54 @@
-@if (showHeader){
-<div
-  class="container"
-  [ngStyle]="{
-    'background-color': backgroundColor != null ? backgroundColor : null
-  }"
->
-  <div class="language-switch">
-    <div
-      class="language-btn"
-      [ngClass]="{ active: this.currentLanguage == 'en' }"
-      (click)="setLanguage('en')"
-    >
-      EN
+<ng-container *transloco="let t">
+  @if (showHeader){
+  <div
+    class="container"
+    [ngStyle]="{
+      'background-color': backgroundColor != null ? backgroundColor : null
+    }"
+  >
+    <div class="language-switch">
+      <div
+        class="language-btn"
+        [ngClass]="{ active: this.currentLanguage == 'en' }"
+        (click)="setLanguage('en')"
+      >
+        EN
+      </div>
+      <div
+        class="language-btn"
+        [ngClass]="{ active: this.currentLanguage == 'nl' }"
+        (click)="setLanguage('nl')"
+      >
+        NL
+      </div>
     </div>
-    <div
-      class="language-btn"
-      [ngClass]="{ active: this.currentLanguage == 'nl' }"
-      (click)="setLanguage('nl')"
-    >
-      NL
+    <div class="logo-container">
+      <a routerLink="/"> <img src="/images/logo.png" alt="logo" /></a>
     </div>
-  </div>
-  <div class="logo-container">
-    <a routerLink="/"> <img src="/images/logo.png" alt="logo" /></a>
-  </div>
-  <div class="routing-container">
-    @if(showFullNavigation){
-    <ng-container *transloco="let t">
+    <div class="routing-container">
+      @if(showFullNavigation){
+      <!-- PC screen -->
+
       <div class="routing-item">
         <a routerLink="/gallery">{{ t("CommonTitles.Gallery") }}</a>
       </div>
       <div class="routing-item">
         <a routerLink="about">{{ t("CommonTitles.About") }}</a>
       </div>
-    </ng-container>
-    }
+
+      } @else {
+      <!-- Mobile screen -->
+      <div class="routing-item">
+        <div class="dropdown">
+          <mat-icon fontIcon="arrow_drop_down_circle"></mat-icon>
+          <div class="dropdown-content">
+            <a routerLink="/gallery">{{ t("CommonTitles.Gallery") }}</a>
+            <a routerLink="about">{{ t("CommonTitles.About") }}</a>
+          </div>
+        </div>
+      </div>
+      }
+    </div>
   </div>
-</div>
-}
+  }
+</ng-container>

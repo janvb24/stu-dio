@@ -1,3 +1,5 @@
+import { SafeResourceUrl } from '@angular/platform-browser';
+
 export interface Gallery {
   Owner: string;
   KVK: string;
@@ -10,6 +12,7 @@ export interface GalleryItem {
   description: languageOptions;
   year: number;
   urls: GalleryUrl[];
+  videos: YoutubeUrl[];
 }
 
 export interface languageOptions {
@@ -20,4 +23,10 @@ export interface languageOptions {
 export interface GalleryUrl {
   url: string;
   altText: string;
+}
+
+export interface YoutubeUrl {
+  id: string;
+  title: string;
+  sanitizedUrl?: SafeResourceUrl;
 }

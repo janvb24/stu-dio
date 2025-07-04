@@ -17,7 +17,8 @@
         { "url": "/images/projects/guitar2025/ps11.png", "altText": "" },
         { "url": "/images/projects/guitar2025/ps22.png", "altText": "" },
         { "url": "/images/projects/guitar2025/ps33.png", "altText": "" }
-      ]
+      ],
+      "videos": []
     },
     {
       "id": 10,
@@ -34,7 +35,8 @@
         { "url": "/images/projects/louers-factory2025/2.jpg", "altText": "" },
         { "url": "/images/projects/louers-factory2025/3.jpg", "altText": "" },
         { "url": "/images/projects/louers-factory2025/4.png", "altText": "" }
-      ]
+      ],
+      "videos": [{ "id": "UIwPIfjU1bU", "title": "Louers vodka Factory" }]
     },
     {
       "id": 9,
@@ -54,7 +56,8 @@
         { "url": "/images/projects/louers2025/4.png", "altText": "" },
         { "url": "/images/projects/louers2025/5.png", "altText": "" },
         { "url": "/images/projects/louers2025/objecten.png", "altText": "" }
-      ]
+      ],
+      "videos": []
     },
     {
       "id": 8,
@@ -72,7 +75,8 @@
           "url": "/images/projects/maya-tempel2025/maya-tempel.png",
           "altText": ""
         }
-      ]
+      ],
+      "videos": []
     },
     {
       "id": 7,
@@ -87,7 +91,8 @@
       "year": 2024,
       "urls": [
         { "url": "/images/projects/LP-cover2024/lp-cover.png", "altText": "" }
-      ]
+      ],
+      "videos": []
     },
     {
       "id": 6,
@@ -104,7 +109,8 @@
         { "url": "/images/projects/wii2024/wii.png", "altText": "" },
         { "url": "/images/projects/wii2024/wii-clean.png", "altText": "" },
         { "url": "/images/projects/wii2024/wii-texture.png", "altText": "" }
-      ]
+      ],
+      "videos": []
     },
     {
       "id": 5,
@@ -119,7 +125,8 @@
       "year": 2024,
       "urls": [
         { "url": "/images/projects/factory2024/factory.png", "altText": "" }
-      ]
+      ],
+      "videos": []
     },
     {
       "id": 4,
@@ -142,7 +149,8 @@
           "url": "/images/projects/zelda2024/zeldaStillFrame2.png",
           "altText": ""
         }
-      ]
+      ],
+      "videos": []
     },
     {
       "id": 3,
@@ -157,7 +165,8 @@
       "year": 2024,
       "urls": [
         { "url": "/images/projects/statue2024/statue.png", "altText": "" }
-      ]
+      ],
+      "videos": [{ "id": "dEXdbBlNYW0", "title": "Gold Statue" }]
     },
     {
       "id": 2,
@@ -170,7 +179,8 @@
         "nl": ""
       },
       "year": 2023,
-      "urls": [{ "url": "/images/projects/tv2023/tv.png", "altText": "" }]
+      "urls": [{ "url": "/images/projects/tv2023/tv.png", "altText": "" }],
+      "videos": []
     },
     {
       "id": 1,
@@ -186,7 +196,8 @@
       "urls": [
         { "url": "/images/projects/hoodie2023/front.png", "altText": "" },
         { "url": "/images/projects/hoodie2023/back.jpg", "altText": "" }
-      ]
+      ],
+      "videos": []
     },
     {
       "id": 0,
@@ -203,7 +214,8 @@
         { "url": "/images/projects/robot-arm2023/textures.png", "altText": "" },
         { "url": "/images/projects/robot-arm2023/clean.png", "altText": "" },
         { "url": "/images/projects/robot-arm2023/wireframe.png", "altText": "" }
-      ]
+      ],
+      "videos": []
     }
   ]
 }
