@@ -40,7 +40,7 @@
       background-image: url("/images/statue1.png");
       background-repeat: no-repeat;
       background-position: top left;
-      background-size: 80%;
+      background-size: 90%;
 
       .showreel-item {
         width: 50%;
@@ -84,12 +84,12 @@
       }
 
       @media screen and (max-width: 1550px) {
-        background-size: 100%;
+        background-size: 120%;
       }
 
       @media screen and (max-width: 1320px) {
-        background-size: 120%;
-        background-position: top right;
+        background-size: 140%;
+        background-position: top center;
       }
 
       @media screen and (max-width: 1120px) {
@@ -107,6 +107,8 @@
       }
 
       @media screen and (max-width: 1200px) {
+        background-size: 150%;
+        background-position: bottom left;
         flex-direction: column;
         padding: 20px;
         .showreel-item {
