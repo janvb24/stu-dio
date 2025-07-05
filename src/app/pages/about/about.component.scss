@@ -26,30 +26,6 @@ h1 {
 .container {
   display: flex;
   flex-direction: column;
-  background-image: url("/images/statue2.png");
-  background-repeat: no-repeat;
-  background-position: calc(50% - 20%) calc(50%);
-  background-size: 40%;
-
-  @media screen and (max-width: 1700px) {
-    background-position: calc(50% - 20%) calc(50% - 64px);
-  }
-
-  @media screen and (max-width: 1450px) {
-    background-position: calc(50% - 20%) calc(50% - 96px);
-  }
-
-  @media screen and (max-width: 1250px) {
-    background-position: calc(50% - 20%) calc(50% - 128px);
-  }
-
-  @media screen and (max-width: 1000px) {
-    background-position: calc(50% - 20%) top;
-  }
-
-  @media screen and (max-width: 1000px) {
-    background-image: none;
-  }
 
   .title {
     text-align: center;
@@ -72,6 +48,7 @@ h1 {
     //   phone screens
     @media screen and (max-width: 800px) {
       flex-direction: column;
+      padding-left: 0px;
 
       .content {
         width: 100%;
@@ -108,6 +85,7 @@ h1 {
 
   .work-container {
     margin-bottom: 0px;
+    padding-left: 0px;
 
     img {
       margin-left: 0px;

@@ -90,7 +90,8 @@
       },
       "year": 2024,
       "urls": [
-        { "url": "/images/projects/LP-cover2024/lp-cover.png", "altText": "" }
+        { "url": "/images/projects/LP-cover2024/lp-cover.png", "altText": "" },
+        { "url": "/images/projects/LP-cover2024/lp-cover1.png", "altText": "" }
       ],
       "videos": []
     },
@@ -107,6 +108,7 @@
       "year": 2024,
       "urls": [
         { "url": "/images/projects/wii2024/wii.png", "altText": "" },
+        { "url": "/images/projects/wii2024/wii1.png", "altText": "" },
         { "url": "/images/projects/wii2024/wii-clean.png", "altText": "" },
         { "url": "/images/projects/wii2024/wii-texture.png", "altText": "" }
       ],

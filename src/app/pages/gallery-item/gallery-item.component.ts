@@ -42,9 +42,10 @@ export class GalleryItemComponent {
           this.router.navigate(['/404']);
         }
       }),
+
+      // Sanatize video url
       map((item) => {
         if (item) {
-          // Sanitize video URLs
           item.videos = item.videos.map((video) => ({
             ...video,
             sanitizedUrl: this.getSafeVideoUrl(video.id),
