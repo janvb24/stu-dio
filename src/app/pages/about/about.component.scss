@@ -34,7 +34,6 @@ h1 {
   p {
     margin: 0px;
   }
-
   .content-container {
     background-color: rgb(2, 2, 32);
     display: flex;
@@ -84,7 +83,6 @@ h1 {
   }
 
   .work-container {
-    margin-bottom: 0px;
     padding-left: 0px;
 
     img {
@@ -101,5 +99,9 @@ h1 {
         order: 1;
       }
     }
+  }
+
+  :last-child {
+    margin-bottom: 0px;
   }
 }
