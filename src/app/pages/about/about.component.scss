@@ -43,6 +43,14 @@ h1 {
     margin: 0px 32px;
     margin-bottom: 32px;
     padding-left: 32px;
+    size: calc(100% - 62px);
+
+    h1 {
+      display: inline-block;
+      font-size: clamp(12px, 8vw, 42px);
+      max-width: 100%;
+      width: 100%;
+    }
 
     //   phone screens
     @media screen and (max-width: 800px) {
